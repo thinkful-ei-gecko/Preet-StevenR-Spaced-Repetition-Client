@@ -1,0 +1,32 @@
+
+header {
+    
+    font: white;
+    background-color: red;
+    position: center;
+    text-align: center;
+}
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    font: bolder;
+    text-underline-position: unset;
+}
+
+h1 {
+display: inline-block;
+justify-content: center;
+top: 0;
+left: 0;
+right: 0;
+text-align: center;
+
+  
+}
+
+nav {
+display: inline-block;
+align-items: baseline;
+justify-content: right;
+text-align: right;
+}
