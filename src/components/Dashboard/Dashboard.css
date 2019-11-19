@@ -1,0 +1,84 @@
+.word-list{
+    list-style: none;
+    padding: 0 10%;
+  }
+  
+  .word-list li{
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 3;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.06);
+  }
+  
+  .word-list h4{
+    margin: 0.5em 0.8em;
+    min-width: 150px;
+    text-align: left;
+    font-size: 2em;
+    font-family: 'Lora';
+    color: #fff;
+  }
+  
+  .word-list span {
+    font-weight: bold;
+  }
+  
+  .word-list div {
+    padding: .5em 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  
+  /*.word-list li p:nth-of-type(1) { background-color: rgba(38, 255, 38, 0.23) }
+  .word-list li p:nth-of-type(2) { background-color: rgba(255, 96, 51, 0.3) }*/
+  .word-list li span:nth-of-type(1) { color: #aae6aa }
+  .word-list li span:nth-of-type(2) { color: #ffbebe }
+  
+  .full-header {
+    width: 100%;
+    margin: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    left: 0;
+    font-size: 6em;
+    font-family: 'Lora';
+    background-color: #053f5e;
+    background: url('/img/stars.jpg');
+    color: #ffffff;
+    border-bottom: 10px solid #0535a7;
+    font-variant: all-small-caps;
+    text-shadow: 0px 5px 0px #2f647d;
+  }
+  
+  .header-stretch { height: 16em }
+  
+  .btn.btn-learn {
+    margin: 35% 0 0;
+    padding: .75em 1.25em;
+  }
+  
+  .total-correct{
+    margin: 0 0 4em 0;
+    color: #fff;
+  }
+  
+  
+  
+  @media only screen and (max-width: 425px) {
+    .full-header {
+      font-size: 20vw;
+    }
+  
+    .btn.btn-learn {
+      margin: 60% 0 0;
+    }
+  
+    .word-list div {
+      margin: 0 0 .5em .5em;
+      text-align: left;
+    }
+  }
