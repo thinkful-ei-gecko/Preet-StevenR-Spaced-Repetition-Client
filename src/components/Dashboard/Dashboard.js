@@ -65,7 +65,7 @@ class Dashboard extends Component {
         {this.context.words ? this.generateList(this.context.words) : null}
         </div>
         <section className="total-correct">
-          <h4>Test Text{this.context.language ? `Total correct answers: ${this.context.language.total_score}` : null }</h4>
+          <h4>{this.context.language ? `Total correct answers: ${this.context.language.total_score}` : null }</h4>
         </section>
       </div>
     )
@@ -73,7 +73,16 @@ class Dashboard extends Component {
 }
 
 export default Dashboard;
+
+
+
+
+
+
+
+
+
+
+
+
 //this.state.loading ? <Loader /> :
-//
-//
-//
