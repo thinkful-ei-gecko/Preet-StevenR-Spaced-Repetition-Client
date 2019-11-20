@@ -1,0 +1,20 @@
+.learn-page {
+    max-width: 40em;
+    margin: 6em auto 0 auto;
+    padding: 2em;
+    position: relative;
+    color: #fff;
+
+    border: 1.5em solid #0f2d75;
+  }
+
+
+
+
+
+
+@media only screen and (max-width: 425px) {
+    .learn-page h2 {
+      font-size: 8vw;
+    }
+  }
