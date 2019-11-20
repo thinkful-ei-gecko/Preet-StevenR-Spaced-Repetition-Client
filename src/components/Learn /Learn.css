@@ -1,11 +1,10 @@
 .learn-page {
-    max-width: 40em;
+    border: 1.5em solid #0f2d75;
     margin: 6em auto 0 auto;
-    padding: 2em;
+    max-width: 40em;
     position: relative;
     color: #fff;
-
-    border: 1.5em solid #0f2d75;
+    padding: 2em;
   }
 
 

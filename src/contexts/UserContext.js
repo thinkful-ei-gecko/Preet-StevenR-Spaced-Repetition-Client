@@ -12,7 +12,6 @@ const UserContext = React.createContext({
   totalScore: null,
   currWord: {},
   guess: null,
-
   setError: () => {},
   clearError: () => {},
   setUser: () => {},
@@ -25,8 +24,7 @@ const UserContext = React.createContext({
   setCurrWord: () => {},
   setGuess: () => {}
 })
-
-export default UserContext
+export default UserContext;
 
 export class UserProvider extends Component {
   constructor(props) {
