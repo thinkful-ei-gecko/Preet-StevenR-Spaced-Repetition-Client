@@ -73,16 +73,3 @@ class Dashboard extends Component {
 }
 
 export default Dashboard;
-
-
-
-
-
-
-
-
-
-
-
-
-//this.state.loading ? <Loader /> :

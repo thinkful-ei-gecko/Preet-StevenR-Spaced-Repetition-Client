@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Loader } from '../Utils/Utils';
 import UserContext from '../../contexts/UserContext';
 import TokenService from '../../services/token-service';
 import config from '../../config';
@@ -11,14 +10,12 @@ class Learn extends Component {
         onResults: false,
         loading: true,
       }
-    
       constructor(props) {
         super(props);
         this.guessInput = React.createRef();
         this.submitForm = this.submitForm.bind(this);
         this.goNext = this.goNext.bind(this);
       }
-    
       static contextType = UserContext
     
       componentDidMount(){
@@ -71,7 +68,6 @@ class Learn extends Component {
         el.classList.remove('invisible');
         setTimeout(() => {el.classList.add('invisible')}, 2500);
       }
-    
     
       clearFeedback() {
         document.getElementById('feedback-overlay').classList.add('invisible');
@@ -133,7 +129,6 @@ class Learn extends Component {
     render(){
         return (
             <div className="learn-page">
-                {this.state.loading ? <div id="loading-overlay"><Loader /></div> : ''}
                 <h2>Translate the word:</h2><span>{this.context.nextWord ?  this.state.onResults ? this.context.currWord.nextWord : this.context.nextWord.nextWord : null}</span>
                 <h3 id="feedback-overlay" tabIndex="0" onKeyPress={this.goNext} className="invisible" onClick={this.clearFeedback} aria-live="polite">{this.getResponseText()}</h3>
                 <div className="DisplayScore">
