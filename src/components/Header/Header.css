@@ -1,6 +1,6 @@
 
 header{
-    padding: 20px;
+    padding: 5px 20px 3px 20px;
     background-color: #aa151b;
     color: #f1bf00;
     border-bottom: 10px solid #8d9ea6;
@@ -8,11 +8,13 @@ header{
   
   nav {
     min-width: 13em;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     text-align: right;
   }
+  
+  a.link {
+    display: inline-block;
+  }
+
   
   nav p {
     margin: 0 20px 0 0;
@@ -22,6 +24,7 @@ header{
   
   nav span { padding: 0 .75em }
 
+  
   
   .flex{
     display: flex;
@@ -52,6 +55,8 @@ header{
   .headerTitle{
     font-size: .75em;
     max-width: 7em;
+    align-content: center;
+    text-align: center;
   }
   
   .logo {
@@ -62,6 +67,8 @@ header{
     background-repeat: no-repeat;
     background-position: center;
   }
+
+ 
   
   @media only screen and (max-width: 425px) {
     nav span,
