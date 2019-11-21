@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 
 * {
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   align-content: center;
   
   padding: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;

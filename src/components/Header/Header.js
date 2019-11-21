@@ -41,11 +41,14 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <h1 className="logo">
-          <Link to='/'>
+        
+        <h1 className="h1">
+          <Link to='/' className="navLink headerTitle">
             Hola!
+            
           </Link>
         </h1>
+        <div className="logo"></div>
         {TokenService.hasAuthToken()
           ? this.renderLogoutLink()
           : this.renderLoginLink()}
