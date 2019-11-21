@@ -41,7 +41,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <h1>
+        <h1 className="logo">
           <Link to='/'>
             Hola!
           </Link>

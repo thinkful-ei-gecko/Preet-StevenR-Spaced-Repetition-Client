@@ -32,22 +32,16 @@
     flex-direction: column;
     text-align: right;
   }
-  
-  /*.word-list li p:nth-of-type(1) { background-color: rgba(38, 255, 38, 0.23) }
-  .word-list li p:nth-of-type(2) { background-color: rgba(255, 96, 51, 0.3) }*/
-  .word-list li span:nth-of-type(1) { color: #aae6aa }
-  .word-list li span:nth-of-type(2) { color: #ffbebe }
-  
+
   .full-header {
     width: 100%;
     margin: 0;
-    padding: 0.5em 0;
+    padding: 0.2em 0;
     position: absolute;
     left: 0;
     font-size: 6em;
     font-family: 'Lora';
-    background-color: #053f5e;
-    background: url('/img/stars.jpg');
+    background-color: #f1bf00;
     color: #ffffff;
     border-bottom: 10px solid #0535a7;
     font-variant: all-small-caps;
@@ -66,7 +60,8 @@
     color: #fff;
   }
   
-  
+  .word-list li span:nth-of-type(1) { color: #3b39a2 }
+  .word-list li span:nth-of-type(2) { color: #b6522e }
   
   @media only screen and (max-width: 425px) {
     .full-header {
