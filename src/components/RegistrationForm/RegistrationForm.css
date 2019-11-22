@@ -41,9 +41,17 @@
     color: #fff;
   }
   
+  section.reg-form {
+    text-align: center;
+    max-width: 60%;
+    justify-content: center;
+  }
+
   .registration-container .formContainer {
     flex: 2;
     flex-basis: 25em;
+    
+
   }
   
   
