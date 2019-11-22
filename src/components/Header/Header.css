@@ -9,6 +9,9 @@ header{
   nav {
     min-width: 13em;
     text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
   
   a.link {
