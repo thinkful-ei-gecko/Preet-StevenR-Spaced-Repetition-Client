@@ -19,6 +19,20 @@ header{
     
   }
 
+<<<<<<< HEAD
+  h1 {
+    margin: 0;
+    line-height: 0.75em;
+  }
+
+  .headerTitle {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+  }
+=======
+>>>>>>> 3b5b24d720e043cb9fac8fcd12549e59e3b0a421
   nav p {
     margin: 0 20px 0 0;
     max-width: 10em;
