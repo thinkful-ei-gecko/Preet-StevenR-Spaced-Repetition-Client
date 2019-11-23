@@ -1,6 +1,14 @@
-export default {
-  API_ENDPOINT: (process.env.NODE_ENV === 'production' 
-    ? 'https://quiet-earth-85650.herokuapp.com/api' : 'http://localhost:8000/api'),
-  TOKEN_KEY: 'blogful-client-auth-token',
+let apiPath;
+let tokenKey;
+if (process.env.NODE_ENV === 'production') {
+  apiPath = 'https://shielded-depths-44236.herokuapp.com/api'
+  tokenKey = 'blogful-client-auth-token'
+} else {
+  apiPath = 'http://localhost:8000/api'
+  tokenKey = 'blogful-client-auth-token'
 }
-//http://localhost:8000/api
+
+export default {
+  API_ENDPOINT: apiPath,
+  TOKEN_KEY: tokenKey,
+}
