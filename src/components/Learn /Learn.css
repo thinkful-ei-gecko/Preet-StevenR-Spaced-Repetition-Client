@@ -32,9 +32,9 @@
   transition: all .5s;
 }
 
-
-@media only screen and (max-width: 425px) {
-    .learn-page h2 {
-      font-size: 8vw;
-    }
+@media only screen and (min-width: 425px) {
+  .learn-page h2 {
+    font-size: 8vw;
   }
+}
+

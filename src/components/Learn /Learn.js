@@ -142,10 +142,14 @@ class Learn extends Component {
                     <input autoFocus={true} id="learn-guess-input" name="userinput" type="text" required={this.state.onResults ? false : true} className={this.state.onResults ? 'hidden' : ''} maxLength="25"></input>
                     <button className="btn" type="submit">{this.getButtonText()}</button>
                 </form>
-                <p className="word-count">You have answered this word correctly {this.state.onResults ? this.context.currWord.wordCorrectCount : this.context.nextWord ? this.context.nextWord.wordCorrectCount : null} times.</p>
-                <p className="word-count">You have answered this word incorrectly {this.state.onResults ? this.context.currWord.wordIncorrectCount : this.context.nextWord ? this.context.nextWord.wordIncorrectCount : null} times.</p>
+                <p className="word-count">You have answered this word correctly {this.state.onResults ? this.context.currWord.wordCorrectCount : null} times.</p>
+                <p className="word-count">You have answered this word incorrectly {this.state.onResults ? this.context.currWord.wordIncorrectCount : null} times.</p>
             </div>
         )
     }
 }
 export default Learn;
+
+// note-to-self - took this out of lines 145/146 before : null , where this now updates the score only when a guess has been submitted
+//: this.context.nextWord ? this.context.nextWord.wordCorrectCount 
+//: this.context.nextWord ? this.context.nextWord.wordIncorrectCount 
