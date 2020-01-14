@@ -40,12 +40,13 @@
   color: #fff;
 }
 
-.registration-container .formContainer {
-  flex: 2;
-  flex-basis: 25em;
-}
 
-
-@media only screen and (max-width: 760px) {
-  .tagline { text-align: center }
+@media only screen and (min-width: 768px) {
+  .tagline { 
+    text-align: center 
+  }
+  .formContainer{
+    flex: 1;
+    flex-basis: 10em;
+  }
 } 
